@@ -1,0 +1,20 @@
+<head>
+  <title>astronomy</title>
+</head>
+
+<body>
+</body>
+
+<template name="MasterLayout">
+  <h1>Welcome to Meteor!</h1>
+  {{> Template.dynamic template=main}}
+</template>
+
+
+<template name="Test">
+    <ul>
+    {{#each chats}}
+        <li>{{title}}</li>
+    {{/each}}
+  </ul>
+</template>
