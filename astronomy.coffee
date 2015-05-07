@@ -8,6 +8,11 @@
     fields: 
         title:
             type: 'string'
+        lastMessage:
+            type: 'object'
+        members:
+            type: 'array'
+            default: []
 
 @Messages = new Mongo.Collection 'messages'
 
@@ -42,9 +47,10 @@ if Meteor.isServer
     Meteor.publish "chats", () ->
         self = this
         transform = (doc) ->
-            lastMessage = Messages.findOne({chatId: doc._id}, {sort: {createdAt: -1}})
-            doc.lastMessage = lastMessage
-            doc
+            obj = doc.get()
+            lastMessage = Messages.findOne({chatId: obj._id}, {sort: {createdAt: -1}, transform: null})
+            obj.lastMessage = lastMessage
+            obj
         observer = Chats.find().observe(
             added: (document) ->
                 self.added 'chats', document._id, transform(document)
