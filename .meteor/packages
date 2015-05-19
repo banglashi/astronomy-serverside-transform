@@ -6,12 +6,12 @@
 
 coffeescript
 meteor-platform
-insecure
+
+
+jagi:astronomy
+jagi:astronomy-validators
+jagi:astronomy-timestamp-behavior
 
 
 meteorhacks:flow-router
 meteorhacks:flow-layout
-# meteorhacks:fast-render
-
-jagi:astronomy
-jagi:astronomy-timestamp-behavior
