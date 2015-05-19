@@ -20,7 +20,7 @@ id-map@1.0.3
 jagi:astronomy@0.8.1
 jagi:astronomy-behaviors@0.2.0
 jagi:astronomy-timestamp-behavior@0.1.0
-jagi:astronomy-validators@0.4.1
+jagi:astronomy-validators@0.7.0
 jquery@1.11.3_2
 json@1.0.3
 launch-screen@1.0.2

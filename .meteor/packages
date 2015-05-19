@@ -8,10 +8,10 @@ coffeescript
 meteor-platform
 
 
-jagi:astronomy
-jagi:astronomy-validators
 jagi:astronomy-timestamp-behavior
 
 
 meteorhacks:flow-router
 meteorhacks:flow-layout
+jagi:astronomy-validators
+jagi:astronomy
