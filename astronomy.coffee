@@ -14,14 +14,14 @@
             type: 'array'
             default: []
 
-# Meteor.startup () ->
-#     # console.log Astronomy
-#     # add validator at startup so we can use Tapi18n
-#     Chat.schema.addValidators ((v) ->
-#         {
-#             title: v.and([v.isString(),v.minLength(3, 'min 3 chars.')])
-#         }
-#     )(Validators)
+Meteor.startup () ->
+    # console.log Astronomy
+    # add validator at startup so we can use Tapi18n
+    Chat.schema.addValidators ((v) ->
+        {
+            title: v.and([v.isString(),v.minLength(3, 'min 3 chars.')])
+        }
+    )(Validators)
 
 @Messages = new Mongo.Collection 'messages'
 
